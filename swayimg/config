@@ -1,0 +1,8 @@
+[general]
+scale = fill
+
+[info]
+mode = off
+
+[list]
+all = no

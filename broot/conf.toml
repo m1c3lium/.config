@@ -1,0 +1,145 @@
+[[verbs]]
+invocation = "edit"
+key = "F2"
+shortcut = "e"
+execution = "$EDITOR +{line} {file}"
+leave_broot = false
+
+[[verbs]]
+invocation = "create {subpath}"
+execution = "$EDITOR {directory}/{subpath}"
+leave_broot = false
+
+[[verbs]]
+invocation = "git_diff"
+shortcut = "gd"
+leave_broot = false
+execution = "git difftool -y {file}"
+
+[[verbs]]
+invocation = "terminal"
+key = "ctrl-t"
+execution = "$SHELL"
+set_working_dir = true
+leave_broot = false
+
+[[verbs]]
+key = "enter"
+execution = "swayimg --size=image {file}"
+extensions = ["bmp", "pnm", "tga", "jpeg", "jpg", "png", "gif", "webp", "svg", "heif", "avif", "avifs", "jxl", "exr", "tiff"]
+leave_broot = false
+apply_to = "file"
+
+
+[[verbs]]
+key = "enter"
+execution = "$EDITOR {file}"
+leave_broot = false
+apply_to = "file"
+
+[[verbs]]
+key = "ctrl-j"
+internal = ":line_down"
+
+[[verbs]]
+key = "ctrl-k"
+internal = ":line_up"
+
+[[verbs]]
+key = "ctrl-h"
+internal = ":up_tree"
+
+[[verbs]]
+key = "ctrl-l"
+internal = ":focus"
+
+[[verbs]]
+key = "alt-Left"
+internal = ":panel_left"
+
+[[verbs]]
+key = "alt-Right"
+internal = ":panel_right"
+
+[[verbs]]
+key = "alt-["
+internal = ":panel_left"
+
+[[verbs]]
+key = "alt-Right"
+internal = ":panel_right"
+
+[skin]
+directory = "ansi(189)"
+file = "ansi(7)"
+pruning = "ansi(8) none italic"
+selected_line = "none ansi(238) none"
+tree = "ansi(8)"
+char_match = "ansi(208) none underlined"
+parent = "ansi(189) none bold"
+exe = "ansi(2)"
+link = "ansi(13)"
+sparse = "ansi(12)"
+input = "ansi(15)"
+status_bold = "ansi(15) ansi(0) bold"
+status_code = "ansi(10) ansi(0)"
+status_ellipsis = "ansi(15) ansi(0)"
+status_error = "ansi(15) ansi(0)"
+status_italic = "ansi(15) ansi(0) italic"
+status_job = "ansi(15) ansi(0)"
+status_normal = "ansi(15) ansi(0)"
+flag_label = "ansi(189)"
+flag_value = "ansi(183) none bold"
+default = "none none"
+scrollbar_track = "ansi(0)"
+scrollbar_thumb = "ansi(244)"
+git_branch = "ansi(13)"
+git_deletions = "ansi(1)"
+git_insertions = "ansi(2)"
+git_status_conflicted = "ansi(1)"
+git_status_current = "ansi(6)"
+git_status_ignored = "ansi(8)"
+git_status_modified = "ansi(3)"
+git_status_new = "ansi(2) none bold"
+git_status_other = "ansi(5)"
+staging_area_title = "ansi(3)"
+help_bold = "ansi(7) none bold"
+help_code = "ansi(4)"
+help_headers = "ansi(3)"
+help_italic = "ansi(7) none italic"
+help_paragraph = "ansi(7)"
+help_table_border = "ansi(8)"
+device_id_major = "ansi(5)"
+device_id_minor = "ansi(5)"
+device_id_sep = "ansi(5)"
+count = "ansi(13)"
+dates = "ansi(6)"
+group = "ansi(3)"
+owner = "ansi(3)"
+perm__ = "ansi(8)"
+perm_r = "ansi(3)"
+perm_w = "ansi(1)"
+perm_x = "ansi(2)"
+hex_null = "ansi(8)"
+hex_ascii_graphic = "ansi(2)"
+hex_ascii_whitespace = "ansi(3)"
+hex_ascii_other = "ansi(4)"
+hex_non_ascii = "ansi(5)"
+file_error = "ansi(1)"
+content_extract = "ansi(7)"
+content_match = "ansi(3) none underlined"
+purpose_bold = "ansi(0) ansi(7) bold"
+purpose_ellipsis = "ansi(0)"
+purpose_italic = "ansi(0) ansi(7) italic"
+purpose_normal = "ansi(0)"
+mode_command_mark = "ansi(7) ansi(4)"
+good_to_bad_0 = "ansi(2)"
+good_to_bad_1 = "ansi(2)"
+good_to_bad_2 = "ansi(2)"
+good_to_bad_3 = "ansi(2)"
+good_to_bad_4 = "ansi(2)"
+good_to_bad_5 = "ansi(1)"
+good_to_bad_6 = "ansi(1)"
+good_to_bad_7 = "ansi(1)"
+good_to_bad_8 = "ansi(1)"
+good_to_bad_9 = "ansi(1)"
