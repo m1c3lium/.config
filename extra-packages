@@ -4,6 +4,7 @@ bzip2
 diffutils
 findutils
 flatpak-xdg-utils
+gcc
 git
 gnupg
 gpgsm
@@ -15,14 +16,17 @@ less
 libcap2-bin
 libkrb5-3
 libnss-mdns
+libssl-dev
 lsof
 man-db
 manpages
 mtr
 nano
+npm
 openssh-client
 passwd
 pigz
+pkg-config
 procps
 rsync
 sudo
@@ -33,6 +37,7 @@ tree
 unzip
 util-linux
 wget
+wl-clipboard
 xauth
 xz-utils
 zip
