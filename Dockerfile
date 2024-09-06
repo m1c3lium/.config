@@ -28,7 +28,6 @@ COPY extra-packages /
 RUN apt-get update && \
     DEBIAN_FRONTEND=noninteractive apt-get -y install \
         libnss-myhostname \
-        gcc libssl-dev wl-clipboard pkg-config npm \
         $(cat extra-packages | xargs) && \
     rm -rd /var/lib/apt/lists/*
 RUN rm /extra-packages
